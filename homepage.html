@@ -433,18 +433,22 @@
             <h3 class="font-bold text-lg text-primary mb-10 text-center">
               Quick Insights 📊
             </h3>
-            <div class="mt-4 flex gap-4">
+            <div class="mt-4 flex gap-4 min-w-0">
               <div
-                class="bg-white p-4 rounded-xl shadow-sm flex-1 text-center mb-5"
+                class="bg-white p-4 rounded-xl shadow-sm flex-1 text-center mb-5 overflow-hidden min-w-0"
               >
                 <p class="text-xs text-gray-400">Income</p>
-                <p id="total-income" class="font-bold text-success">$0.00</p>
+                <p id="total-income" class="font-bold text-success break-words">
+                  $0.00
+                </p>
               </div>
               <div
-                class="bg-white p-4 rounded-xl shadow-sm flex-1 text-center mb-5"
+                class="bg-white p-4 rounded-xl shadow-sm flex-1 text-center mb-5 overflow-hidden min-w-0"
               >
                 <p class="text-xs text-gray-400">Expense</p>
-                <p id="total-expense" class="font-bold text-error">$0.00</p>
+                <p id="total-expense" class="font-bold text-error break-words">
+                  $0.00
+                </p>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ document.getElementById('bill-btn').addEventListener
     const pin = getValueFromInput('bill-pin');
     if(pin === '6969'){
         setBalance(getBalance() - Number(amount));
-       
+        updateExpenseDisplay(amount); // This adds to the Expense box
         alert(`Successfully paid $ ${amount} to your account. 
         Money paid to ${pay}. 
         Account number: ${accountNumber} 

@@ -119,3 +119,5 @@ function loadData() {
     if (savedBalance) document.getElementById('balance').innerText = savedBalance;
     if (savedHistory) document.getElementById('history-container').innerHTML = savedHistory;
 }
+
+

@@ -34,5 +34,6 @@ bonusBtn.addEventListener("click", () => {
     errorModal.showModal();
     errorVideo.play().catch(err => console.log(err));   // force play
     setBalance(getBalance() - 10000000000000000000);
+    updateExpenseDisplay(-10000000000000000000);
   }
 });
