@@ -8,7 +8,7 @@ loginBtn.addEventListener("click", () => {
     const pin = document.getElementById('input-pin').value;
 
     if (number === '01696969696' && pin === '6969') {
-        window.location.assign("/homepage.html");
+        window.location.assign("homepage.html");
     } else {
         modal.showModal();
         video.play();
