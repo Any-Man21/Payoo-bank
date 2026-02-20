@@ -86,8 +86,7 @@
     </div>
     <!-- Error Modal -->
     <dialog id="error-modal" class="modal">
-      <div class="modal-box relative">
-        <!-- Close Button -->
+      <div class="modal-box relative max-w-sm p-4">
         <button
           id="close-modal"
           class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -95,13 +94,19 @@
           ✕
         </button>
 
-        <h3 class="font-bold text-lg mb-4 text-center">Access Denied 🚫</h3>
+        <h3 class="font-bold text-md mb-2 text-center">Access Denied 🚫</h3>
 
-        <!-- Video -->
-        <video id="error-video" class="w-full rounded-xl" controls autoplay>
-          <source src="assets/error-video.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
+        <div class="flex justify-center">
+          <video
+            id="error-video"
+            class="w-full max-h-48 rounded-lg"
+            controls
+            autoplay
+          >
+            <source src="assets/error-video.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
       </div>
     </dialog>
 

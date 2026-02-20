@@ -456,8 +456,7 @@
 
     <!-- Error Modal -->
     <dialog id="error-modal" class="modal">
-      <div class="modal-box relative">
-        <!-- Close Button -->
+      <div class="modal-box relative max-w-sm p-4">
         <button
           id="close-modal"
           class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -465,21 +464,25 @@
           ✕
         </button>
 
-        <h3 class="font-bold text-lg mb-4 text-center">Access Denied 🚫</h3>
+        <h3 class="font-bold text-md mb-2 text-center">Access Denied 🚫</h3>
 
-        <!-- Video -->
-        <video id="error-video" class="w-full rounded-xl" controls autoplay>
-          <source src="assets/error-video.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
+        <div class="flex justify-center">
+          <video
+            id="error-video"
+            class="w-full max-h-48 rounded-lg"
+            controls
+            autoplay
+          >
+            <source src="assets/error-video.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
       </div>
     </dialog>
 
     <!-- success modal for right coupon code -->
     <dialog id="success-modal" class="modal">
-      <div
-        class="modal-box relative w-11/12 max-w-sm max-h-[90vh] overflow-y-auto"
-      >
+      <div class="modal-box relative max-w-sm p-4">
         <button
           id="close-success-modal"
           class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -487,26 +490,25 @@
           ✕
         </button>
 
-        <h3 class="font-bold text-lg text-center mb-4">Success! 🎉</h3>
+        <h3 class="font-bold text-md mb-2 text-center">Success! 🎉</h3>
 
-        <video
-          id="success-video"
-          class="w-full rounded-xl max-h-[60vh]"
-          controls
-          autoplay
-        >
-          <source src="assets/success-modal.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
+        <div class="flex justify-center">
+          <video
+            id="success-video"
+            class="w-full max-h-48 rounded-lg"
+            controls
+            autoplay
+          >
+            <source src="assets/success-modal.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
       </div>
     </dialog>
 
     <!-- wrong code modal -->
     <dialog id="wrong-code-modal" class="modal">
-      <div
-        class="modal-box relative w-11/12 max-w-sm max-h-[90vh] overflow-y-auto"
-      >
-        <!-- Close Button -->
+      <div class="modal-box relative max-w-sm p-4">
         <button
           id="close-wrong-code-modal"
           class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -514,18 +516,19 @@
           ✕
         </button>
 
-        <h3 class="font-bold text-lg text-center mb-4">Access Denied 🚫</h3>
+        <h3 class="font-bold text-md mb-2 text-center">Access Denied 🚫</h3>
 
-        <!-- Video -->
-        <video
-          id="wrong-code-video"
-          class="w-full rounded-xl max-h-[60vh]"
-          controls
-          autoplay
-        >
-          <source src="assets/extra-bonus.mp4" type="video/mp4" />
-          Your browser does not support video.
-        </video>
+        <div class="flex justify-center">
+          <video
+            id="wrong-code-video"
+            class="w-full max-h-48 rounded-lg"
+            controls
+            autoplay
+          >
+            <source src="assets/extra-bonus.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
       </div>
     </dialog>
 
